@@ -1,9 +1,10 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* apply styles to <header> */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -35,14 +36,30 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
 }
+/* Hero Style Start */
+.hero {
+    background-image: url(/assets/images/hero-bg.jpeg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-form {
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    border: solid 3px #024e76;
+}
+/*Hero Style End */
 
 body {
     /* more on this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
-  /* apply styles to <header> */
 
+/* apply styles to <footer> */
 footer {
       background: #fce138;
       width: 100%;
@@ -65,4 +82,8 @@ footer div {
 footer a {
     color: #024e76;
 }
+
+section {
+    padding: 60px;
+  }
 
