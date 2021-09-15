@@ -94,12 +94,33 @@ header nav ul li a {
     font-size: 16px;
 }
 /*Hero Style End */
-
 body {
     /* more on this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    /*add this alongide your other declarations */ display: inline-block;
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    border-color: #fce138;
+}
+
+.intro p {
+    /* add thi alongside your other declrations */margin: 0 auto;
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+}
 
 /* apply styles to <footer> */
 footer {
