@@ -100,18 +100,16 @@ body {
     font-family: Helvetica, Arial, sans-serif;
   }
 
-.intro {
-    text-align: center;
+.primary-border {
+    border-color: #fce138;
 }
 
-.intro h2 {
-    /*add this alongide your other declarations */ display: inline-block;
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
+.secondary-border {
+    border-color: #39a6b2;
+}
+
+.intro {
+    text-align: center;
 }
 
 .intro p {
@@ -120,6 +118,35 @@ body {
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
+}
+
+.steps {
+    text-align: center;
+    background: #fce138;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+
+.steps p {
+    color: #39a6b2;
+    font-size: 23 px;
+}
+
+.steps span {
+    font-size: 38px;
 }
 
 /* apply styles to <footer> */
@@ -150,3 +177,11 @@ section {
     padding: 60px;
   }
 
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
