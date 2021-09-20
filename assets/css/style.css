@@ -117,21 +117,17 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.intro {
-    text-align: center;
-}
-
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
+    text-align: center;
     /* add this alongside your other declrations */
     margin: 0 auto;
 }
 
 .steps {
-    text-align: center;
     background: #fce138;
 }
 
@@ -171,11 +167,12 @@ body {
 
 .section-title {
     font-size: 55px;
-    display: inline-block;
-    padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    margin-bottom: 35px;
     color: #024e76;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
 
 .primary-border {
@@ -215,11 +212,7 @@ section {
     padding: 60px;
   }
 
-  .trainers {
-      text-align: center;
-  }
-
-  .trainer {
+.trainer {
       width: 900px;
       margin: 0 auto 30px auto;
       background: #024e76;
@@ -227,24 +220,28 @@ section {
       overflow: auto
   }
 
-  .trainer img {
+.trainer img {
       width: 35%;
       float: left;
       overflow: auto
   }
 
-  .trainer-bio {
+.trainer-bio {
       padding: 35px;
       float: left;
       width: 65%;
   }
 
-  .text-left {
+.text-left {
       text-align: left;
   }
 
-  .text-right {
+.text-right {
     text-align: right;
+}
+
+.flex-row {
+    display: flex;
 }
 
 .trainer-bio h3 {
@@ -265,7 +262,6 @@ section {
 
 /* REACH OUT STYLES START */
 .contact {
-    text-align: center;
     background: #024e76;
 }
 
