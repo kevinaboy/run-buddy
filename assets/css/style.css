@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +11,7 @@
 }
 
 body {
-  color: #39a6b2;
+  color: var(--tertiary-color);
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -17,7 +23,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -31,13 +37,13 @@ header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: #fce138;
+    color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 header nav {
@@ -60,8 +66,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: #fce138;
-  color: #024e76;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
 }
@@ -70,7 +76,7 @@ header nav ul li a:hover {
 
 /* FOOTER STYLES START */
 footer {
-  background: #fce138;
+  background: var(--primary-color);
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
@@ -79,7 +85,7 @@ footer {
 }
 
 footer h2 {
-  color:#024e76;
+  color:var(--secondary-color);
   font-size: 30px;
   margin: 0;
 }
@@ -90,7 +96,7 @@ footer div {
 }
 
 footer a {
-  color: #024e76;
+  color: var(--secondary-color);
 }
 
 /* FOOTER STYLES END */
@@ -124,16 +130,16 @@ section {
 .hero-cta h2 {
   font-style: italic;
   font-size: 55px;
-  color: #fce138;
+  color: var(--primary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form {
-  border: 3px solid #024e76;
+  border: 3px solid var(--secondary-color);
   border-radius: 15px;
   background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
-  color: #024e76;
+  color: var(--secondary-color);
   width: 40%;
   margin: 3.5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -150,12 +156,12 @@ section {
 
 .form-input {
     background-color: rgba(255, 255, 255, 0.75);
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
   }
@@ -171,8 +177,8 @@ section {
 }
 
 .hero-form button {
-    color: #fce138;
-    background-color: #024e76;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -180,7 +186,7 @@ section {
 }
 
 .hero-form button:hover {
-  background-color: #39a6b2;
+  background-color: var(--tertiary-color);
 }
 
 .checkbox-wrapper input, .radio-wrapper input {
@@ -199,7 +205,7 @@ section {
   height: 20px;
   width: 20px;
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid #024e76;
+  border: 1px solid var(--secondary-color);
   position: absolute;
   top: -4px;
   left: -30px;
@@ -214,19 +220,19 @@ section {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #024e76;
+  background: var(--secondary-color);
   position: absolute;
   left: -29px;
   top: -3px;
-  background-image: radial-gradient(circle, #39a6b2, #024e76);
+  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
 
 .checkbox-wrapper label::after {
   content: "";
   height: 6px;
   width: 14px;
-  border-left: 2px solid #024e76;
-  border-bottom: 2px solid #024e76;
+  border-left: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
   position: absolute;
   left: -26px;
   top: 1px;
@@ -249,7 +255,7 @@ section {
 .section-title {
   font-size: 48px;
   border-bottom: 3px solid;
-  color: #024e76;
+  color: var(--secondary-color);
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -257,11 +263,11 @@ section {
 }
 
 .primary-border {
-  border-color: #fce138;
+  border-color: var(--primary-color);
 }
 
 .secondary-border {
-  border-color: #39a6b2;
+  border-color: var(--tertiary-color);
 }
 
 /* SECTION TITLES STYLES END */
@@ -270,7 +276,7 @@ section {
 
 .intro p {
   line-height: 1.7;  
-  color: #39a6b2;
+  color: var(--tertiary-color);
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
@@ -281,7 +287,7 @@ section {
 
 /* WHAT YOU DO STYLES START */
 .steps {
-  background: #fce138;
+  background: var(--primary-color);
 }
 
 .step {
@@ -292,7 +298,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #39a6b2;
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 .step:last-child {
@@ -300,7 +306,7 @@ section {
 }
 
 .step h3 {
-  color: #024e76;
+  color: var(--secondary-color);
   font-size: 46px;
   flex: 1 30%;
 }
@@ -326,14 +332,14 @@ section {
 }
 
 .step-text p {
-  color: #39a6b2;
+  color: var(--tertiary-color);
   font-size: 18px;
 }
 
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
-  color: #024e76;
+  color: var(--secondary-color);
 }
 
 /* WHAT YOU DO STYLES END */
@@ -350,8 +356,8 @@ section {
 .trainer {
   margin: 20px;
   flex: 1;
-  background: #024e76;
-  color: #fce138;
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .trainer img {
@@ -382,11 +388,11 @@ section {
 
 /* REACH OUT STYLES START */
 .contact {
-  background: #024e76;
+  background: var(--secondary-color);
 }
 
 .contact h2 {
-  color: #fce138;
+  color: var(--primary-color);
 }
 
 .contact-info {
@@ -409,7 +415,7 @@ section {
 }
 
 .contact-info h3 {
-  color: #fce138;
+  color: var(--primary-color);
   font-size: 32px;
 }
 
@@ -422,12 +428,12 @@ section {
 
 .contact-form input, .contact-form textarea {
   background-color: rgba(255, 255, 255, 0.75);
-  border: 1px solid #024e76;
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color: #024e76;
+  color: var(--secondary-color);
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
@@ -442,20 +448,20 @@ section {
   width: 100%;
   border: none;
   border-radius: 10px;
-  background: #fce138;
-  color: #024e76;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
 }
 
 .contact-form button:hover {
-  color: #fce138;
-  background: #39a6b2;
+  color: var(--primary-color);
+  background: var(--tertiary-color);
 }
 
 .contact-info a {
-  color: #fce138;
+  color: var(--primary-color);
 }
 
 /*REACH OUT STYLES END */
